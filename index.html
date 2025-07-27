@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GABBY BOLOGNESI</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+            crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="carousel-header">
+            <div id="carousel" class="carousel-track">
+                <h1>
+                    DATA ANALYST & ENGINEER * WEB DEVELOPER * ASPIRING DOG WALKER * FULL TIME COMEDIAN * CREATIVE CODER
+                    * DATA
+                    ANALYST & ENGINEER * WEB DEVELOPER * ASPIRING DOG WALKER * FULL TIME COMEDIAN * CREATIVE CODER *
+                </h1>
+            </div>
+        </div>
+
+        <div class="name-heading text-center position-relative">
+            <h1 class="m-0">GABBY BOLOGNESI</h1>
+            <div class="icon-row d-flex">
+                <img onclick="pauseFunction()" src="Icons/pause.png" alt="Pause Button"
+                    class="img-fluid button-icon me-2">
+                <img onclick="playFunction()" src="Icons/play.png" alt="Play Button" class="img-fluid button-icon me-2">
+                <img onclick="partyFunction()" src="Icons/party.png" alt="Party Button" class="img-fluid button-icon">
+            </div>
+        </div>
+
+        <div class="position-relative" id="desktop-area">
+            <div class="folder-grid">
+                <div id="file1" class="draggable-item">
+                    <img src="Icons/file_icon.png" alt="File 1" title="Double click to open" class="folder-icon"
+                        onclick="handleClickOrDoubleClick(event, 'file1')" ondblclick="openFolder('file1')">
+                    <h2>READ ME</h2>
+                </div>
+
+                <div id="file2" class="draggable-item">
+                    <img src="Icons/file_icon.png" alt="File 2" title="Double click to open" class="folder-icon"
+                        onclick="handleClickOrDoubleClick(event, 'file2')" ondblclick="openFolder('file2')">
+                    <h2>EDUCATION</h2>
+                </div>
+
+                <div id="file3" class="draggable-item">
+                    <img src="Icons/file_icon.png" alt="File 3" title="Double click to open" class="folder-icon"
+                        onclick="handleClickOrDoubleClick(event, 'file3')" ondblclick="openFolder('file3')">
+                    <h2>SKILLS</h2>
+                </div>
+
+                <div id="file4" class="draggable-item">
+                    <img src="Icons/file_icon.png" alt="File 4" title="Double click to open" class="folder-icon"
+                        onclick="handleClickOrDoubleClick(event, 'file4')" ondblclick="openFolder('file4')">
+                    <h2>WORK EXPERIENCE</h2>
+                </div>
+            </div>
+
+            <div id="folderOverlay" class="folder-overlay" onclick="closeFolder()">
+                <div id="folderModal" class="folder-modal" onclick="event.stopPropagation()">
+                    <button class="close-button" onclick="closeFolder()">&times;</button>
+                    <div id="folderContent" class="folder-content-box">Loading...</div>
+                </div>
+            </div>
+
+            <div id="content-file1" class="folder-writeup" style="display: none;">
+                I am a graduate from the University of Cape Town with a Bachelor of Science in Computer Science and
+                Economics.
+                My decision to pursue these fields stemmed from a desire to create designs that are not only efficient
+                and
+                practical, but also serve the greater good of the community. For this reason, I found my degree highly
+                fulfilling and intellectually stimulating.
+
+                I am currently a Data Analyst & Engineer at GUUD, a company focused on mobility to drive solutions for
+                the lack
+                of access to affordable and accessible medical care in South Africa.
+
+                In addition, I am studying a part-time Full Stack Web Development course through HyperionDev to continue
+                expanding my knowledge in the tech industry and to pursue my interest in the creative and design world.
+            </div>
+
+            <div id="content-file2" class="folder-writeup" style="display: none;">
+                I matriculated from Rhenish Girls' High School in 2018 and spent time in Vietnam working as an English
+                teacher,
+                gaining both professional and cultural experience through travel. The following year, I began my
+                academic
+                journey at the University of Cape Town, graduating with a Bachelor of Science in Computer Science and
+                Economics.
+
+                In my current role as a Data Analyst and Engineer at GUUD, I discovered that my passion for learning and
+                problem-solving continues to grow. To build on this momentum and deepen my technical and creative skill
+                set, I
+                enrolled in the Full Stack Web Development bootcamp at HyperionDev — an experience that has been both
+                challenging and incredibly rewarding.
+
+                Alongside my technical background, I hold a Trinity College London qualification in Drama and am a
+                trained
+                clarinetist through the Royal Schools of Music. The arts have always played an important role in my
+                life, and I
+                continue to explore creativity and self-expression through my personal pursuits.
+            </div>
+
+            <div id="content-file3" class="folder-writeup" style="display: none;">
+                PROGRAMMING & DEVELOPMENT:
+
+                Python – Experienced in data analysis, automation, and backend logic and engineering
+                JavaScript - in vanilla JavaScript, with experience using frameworks and libraries such as React and
+                Next.js to
+                build interactive and performant web applications
+                Kotlin – Familiar with Android app development and modern mobile UI principles
+                MySQL – Skilled in writing queries, managing relational databases, and integrating data-driven
+                applications
+
+                DATA ANALYTICS & VISUALISATION:
+
+                Power BI – Comfortable building dashboards, transforming data, and presenting key insights
+                Metabase - Used for data management and data visualisation for buisness insights
+                Matplotlib, Seaborn & Pandas (Python) – Effective for visual storytelling in data science workflows
+
+                WEB DESIGN:
+
+                Figma – Proficient in UI/UX wireframing, prototyping, and responsive interface design
+                Adobe Premiere Pro – Skilled in video editing, narrative sequencing, and content creation
+                HTML & CSS – Solid foundation in semantic structure, responsive layout, and web styling
+                Framer - For building robust Web Designs and Prototypes
+                Bootstrap – Familiar with rapid UI development using prebuilt responsive components
+
+                TOOLS & TECHNOLOGIES:
+
+                Git & GitHub – Experienced with version control, collaborative workflows, and project management
+                NPM / Node.js – Used for managing JavaScript dependencies and building modern web applications
+                Notion – Used for planning, documentation, and personal knowledge management
+                ClickUp - Used for task management, project tracking, and team collaboration
+            </div>
+
+            <div id="content-file4" class="folder-writeup" style="display: none;">
+                GUUD (City of Cape Town, South Africa):
+                - Junior Data Analyst & Engineer (Full-time | Mar 2025 – Present): Currently working in a hybrid role
+                focusing
+                on data analysis and engineering tasks to support healthcare mobility solutions.
+                - Data Analyst Intern (Sep 2024 – Feb 2025): Completed a 6-month internship contributing to data
+                cleaning,
+                reporting, and insight generation for medical accessibility projects.
+
+                Kloof Street House (Cape Town, South Africa):
+                - Waitress (Dec 2021 – May 2024)
+                Delivered high-end customer service in a fast-paced restaurant setting. Built strong skills in
+                upselling,
+                adaptability, and team coordination.
+
+                Private Family (Cape Town, South Africa):
+                - Au Pair (Part-time | Jan 2021 – Dec 2021): Provided childcare support, emphasizing safety,
+                organization, and
+                educational play.
+
+                Loading Bay & Pauline’s (Cape Town, South Africa):
+                - Waitress (Part-time | Jan 2021 – Oct 2021): Assisted in customer service and food delivery in a
+                boutique
+                hospitality setting.
+
+                Man’oushe Restaurant (Stellenbosch, South Africa):
+                - Waitress (Part-time | Feb 2019 – Nov 2020): Supported front-of-house operations with a focus on
+                teamwork,
+                attention to detail, and leadership in a dynamic environment.
+
+                VietMy English Centre (Buon Ma Thuot, Vietnam):
+                - English Second Language Teacher (Freelance | Aug 2019 – Oct 2019): Taught English to children aged
+                3–17 as
+                part of a cultural immersion experience during a gap year. Gained skills in classroom management,
+                creativity,
+                and empathy.
+            </div>
+        </div>
+
+        <footer class="footer text-center mt-5 py-4">
+            <div class="container">
+                <div class="social-icons mb-3">
+                    <a href="mailto:gabriellabolognesiza@gmail.com" target="_blank" class="me-3">
+                        <img src="Icons/gmail-icon.png" alt="Email" width="30">
+                    </a>
+                    <a href="https://github.com/Gibson33" target="_blank" class="me-3">
+                        <img src="Icons/github-icon.png" alt="GitHub" width="30">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabriella-bolognesi" target="_blank">
+                        <img src="Icons/ln-icon.png" alt="LinkedIn" width="30">
+                    </a>
+                </div>
+                <p class="mb-0">📞 (+27) 72 177 1775</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+        <script>
+            function handleClickOrDoubleClick(event, fileId) {
+                if (window.innerWidth <= 1024) {
+                    event.preventDefault();
+                    openFolder(fileId);
+                }
+            }
+        </script>
+        <script src="gabbyBolognesi.js"></script>
+    </body>
+</html>
