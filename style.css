@@ -121,7 +121,7 @@ body {
   filter: drop-shadow(0 0 6px #4a90e2);
 }
 
-/* DRAGGABLE ITEMS */
+/* DRAGGABLE ITEMS DEFAULT FOR DESKTOP */
 .draggable-item {
   position: absolute;
   cursor: grab;
@@ -131,6 +131,26 @@ body {
   border-radius: 8px;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   user-select: none;
+}
+
+#file1 {
+  top: 60px;
+  left: 10%;
+}
+
+#file2 {
+  top: 200px;
+  left: 60%;
+}
+
+#file3 {
+  top: 400px;
+  left: 30%;
+}
+
+#file4 {
+  top: 150px;
+  left: 80%;
 }
 
 .draggable-item:hover {
@@ -149,7 +169,7 @@ body {
 }
 
 .folder-icon:hover::after {
-  content: attr(alt);
+  content: attr(title);
   position: absolute;
   top: -2rem;
   left: 50%;
