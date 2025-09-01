@@ -1,6 +1,6 @@
 # Gabby Bolognesi - Interactive Portfolio Website
 
-This is a fully responsive, interactive CV/portfolio site designed and developed by myself, Gabby Bolognesi. 
+This is a fully responsive, interactive CV/portfolio site designed and developed by myself, Gabby Bolognesi. To view the website, please find it here: https://gibson33.github.io/GabbyBolognesi/.
 
 ## 🔧 Technologies Used
 
